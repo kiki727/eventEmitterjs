@@ -1,0 +1,2 @@
+# eventEmitterjs
+custom event emmiter
