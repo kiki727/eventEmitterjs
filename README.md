@@ -1,28 +1,29 @@
 # eventEmitterjs
 custom event emmiter
-// main.js
-const EventEmitter = require('./eventEmitter');
-
-const myEmitter = new EventEmitter();
-
-// Pretplati se na događaj
-myEmitter.on('customEvent', data => {
-  console.log(`Događaj emitovan sa podacima: ${data}`);
+<br />
+// main.js <br />
+const EventEmitter = require('./eventEmitter');<br />
+<br />
+const myEmitter = new EventEmitter();<br />
+<br />
+// Pretplati se na događaj<br />
+myEmitter.on('customEvent', data => {<br />
+  console.log(`Događaj emitovan sa podacima: ${data}`);<br />
 });
+<br />
+// Emituj događaj sa podacima<br />
+myEmitter.emit('customEvent', 'Zdravo, ovo su neki podaci!');<br />
+ or<br />
+ in browser<br />
 
-// Emituj događaj sa podacima
-myEmitter.emit('customEvent', 'Zdravo, ovo su neki podaci!');
- or
- in browser
-
- import EventEmitter from './eventEmitter';
-
-const myEmitter = new EventEmitter();
-
-// Subscribe to an event
-myEmitter.on('customEvent', data => {
-  console.log(`Event emitted with data: ${data}`);
-});
-
-// Emit an event with data
-myEmitter.emit('customEvent', 'Hello, this is some data!');
+ import EventEmitter from './eventEmitter';<br />
+<br />
+const myEmitter = new EventEmitter();<br />
+<br />
+// Subscribe to an event<br />
+myEmitter.on('customEvent', data => {<br />
+  console.log(`Event emitted with data: ${data}`);<br />
+});<br />
+<br />
+// Emit an event with data<br />
+myEmitter.emit('customEvent', 'Hello, this is some data!');<br />
