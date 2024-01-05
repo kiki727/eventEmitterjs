@@ -11,7 +11,8 @@ const myEmitter = new EventEmitter();<br />
 <br />
 myEmitter.on('customEvent', data => {<br />
   console.log(`Događaj emitovan sa podacima: ${data}`);<br />
-});
+});<br />
+<br />
 <br />
 // Emituj događaj sa podacima<br />
 myEmitter.emit('customEvent', 'Zdravo, ovo su neki podaci!');<br />
